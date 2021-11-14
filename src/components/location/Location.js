@@ -1,8 +1,21 @@
 import "./Location.css";
+import AddBtn from "../AddBtn/AddBtn.js";
+import React, { useState } from 'react';
+import Modal from "../modal/Modal.js";
+import AddLocCat from "../modal/modalFields/AddLocCat";
+import LocationsList from "./locationsList/LocationsList";
 
-function Location() {
+const Location = () => {
+
+    const [showModal, setShowModal] = useState(false)
+
     return (
-        <h1>Location</h1>
+        <section className="locationWrapper">
+            {showModal ? <Modal title="Add Location" text="Add a location with the fields below."
+            btnText="Add" dismiss={setShowModal.bind(this, false)}><AddLocCat /></Modal> : null}
+            <AddBtn type="location" func={setShowModal.bind(this, true)}></AddBtn>
+            <LocationsList />
+        </section>
     )
 }
 

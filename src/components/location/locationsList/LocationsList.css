@@ -1,0 +1,44 @@
+.App .itemsList {
+    width: 100%;
+}
+
+.App .itemsList table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.App .itemsList table thead {
+    background-color: #9696dd;
+    margin-bottom: 1rem;
+}
+
+.App .itemsList table thead th {
+    color: #FFF;
+    padding: 1rem;
+}
+
+.App .itemsList table tbody tr  {
+    background-color: #c1c1cc;
+}
+
+.App .itemsList table tbody tr:nth-of-type(even) {
+    background-color: #c1c1d4;
+}
+
+.App .itemsList table tbody tr td {
+   text-align: center; 
+}
+
+.App .itemsList table tbody tr td .control {
+    cursor: pointer;
+    color: #4e4edf;
+}
+
+.App .itemsList table tbody tr td .control:hover {
+    color: #9696dd; 
+}
+
+.App .itemsList {
+    
+}

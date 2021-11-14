@@ -1,0 +1,11 @@
+.App .addBtn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4e4edf;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 0.15rem;
+    cursor: pointer;
+}
+

@@ -5,7 +5,7 @@ import Location from "./components/location/Location.js";
 import Items from "./components/items/Items.js";
 
 function App() {
-  return (
+    return (
     <div className="App">
       <header>
         <nav>
@@ -13,19 +13,20 @@ function App() {
             <Link to="/">Items</Link>
           </div>
           <div className="nav-item">
-            <Link to="/">Categories</Link>
+            <Link to="/categories">Categories</Link>
           </div>
           <div className="nav-item">
-            <Link to="/">Locations</Link>
+            <Link to="/locations">Locations</Link>
           </div>
         </nav>
       </header>
 
       <main>
+        
         <Routes>
-          <Route path="/" element={Items}></Route>
-          <Route path="/location" element={Location}></Route>
-          <Route path="/category" element={Category}></Route>
+          <Route exact path="/" element={<Items />}></Route>
+          <Route path="/locations" element={<Location />}></Route>
+          <Route path="/categories" element={<Category />}></Route>
         </Routes>
       </main>
     </div>
