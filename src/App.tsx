@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
-import Category from "./components/category/Category.js";
-import Location from "./components/location/Location.js";
-import Items from "./components/items/Items.js";
+import Category from "./components/category/Category";
+import Location from "./components/location/Location";
+import Items from "./components/items/Items";
 
 function App() {
     return (
@@ -24,7 +24,7 @@ function App() {
       <main>
         
         <Routes>
-          <Route exact path="/" element={<Items />}></Route>
+          <Route path="/" element={<Items />}></Route>
           <Route path="/locations" element={<Location />}></Route>
           <Route path="/categories" element={<Category />}></Route>
         </Routes>
