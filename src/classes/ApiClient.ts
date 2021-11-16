@@ -3,6 +3,7 @@ class APIClient {
 
     constructor(apiUrl : string) {
         this.url = apiUrl;
+
     }
 
     async AddCategory(name: string, description: string) {
@@ -85,7 +86,9 @@ class APIClient {
                 GetAllItems {
                     id,
                     name,
-                    description
+                    description,
+                    locationId,
+                    categoryId
                 }
             }`
         );

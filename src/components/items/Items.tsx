@@ -4,8 +4,6 @@ import Modal from "../modal/Modal";
 import AddItem from "../modal/modalFields/AddItem";
 import React, { useState } from 'react';
 import ItemsList from "./itemsList/ItemsList"
-import APIClient from "../../classes/ApiClient";
-const api = new APIClient("http://10.10.10.53:8080/graphql"); // Need to look up how to best store this so I don't have multiple instantiations.
 
 const Items = () => {
 

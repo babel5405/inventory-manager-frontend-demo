@@ -1,10 +1,10 @@
 import React from "react";
 import "./Modal.css";
-import APIClient from "../../classes/ApiClient";
-const api = new APIClient("http://10.10.10.53:8080/graphql"); // Need to look up how to best store this so I don't have multiple instantiations.
+// import APIClient from "../../classes/ApiClient";
+// const api = new APIClient("http://10.10.10.53:8080/graphql"); // Need to look up how to best store this so I don't have multiple instantiations.
 
 
-const Category = (props : any) => {
+const Category = (props : any) => { // Don't like this, but will have to look into how to properly type it.
     return (
         <section className="ModalShadow">
             <div className="Modal">
