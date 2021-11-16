@@ -3,6 +3,13 @@ import { Routes, Route, Link } from "react-router-dom";
 import Category from "./components/category/Category.js";
 import Location from "./components/location/Location.js";
 import Items from "./components/items/Items.js";
+import APIClient from './classes/ApiClient'
+
+let client = new APIClient("http://10.10.10.53:8080/graphql");
+
+client.AddCategory("Js Test", "Js Test Desc").then(async res => {
+  console.log(await res.json());
+});
 
 function App() {
     return (
